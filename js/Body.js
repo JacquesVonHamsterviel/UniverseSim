@@ -1,4 +1,4 @@
-var MAX_TAIL_PIONTS = 1000
+var MAX_TAIL_PIONTS = 10000
 function Body(config,scene){
 	this.scene = scene
 	this.config = config
@@ -159,10 +159,10 @@ Body.prototype.blast = function(pos){
 }
 Body.prototype.clean = function(){
 	for(var i=0;i<this.tails.length;i++){
-		//this.scene.remove(this.tails[i])
+		this.scene.remove(this.tails[i])
 		//this.tails.remove(this.tails[i])
-		//console.log('remove tail:'+i)
-		pass
+		console.log('remove tail:'+i)
+		
 	}
 	this.tails=[]
 			
