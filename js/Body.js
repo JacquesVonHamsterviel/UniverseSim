@@ -159,9 +159,10 @@ Body.prototype.blast = function(pos){
 }
 Body.prototype.clean = function(){
 	for(var i=0;i<this.tails.length;i++){
-		this.scene.remove(this.tails[i])
+		//this.scene.remove(this.tails[i])
 		//this.tails.remove(this.tails[i])
-		console.log('remove tail:'+i)
+		//console.log('remove tail:'+i)
+		pass
 	}
 	this.tails=[]
 			
